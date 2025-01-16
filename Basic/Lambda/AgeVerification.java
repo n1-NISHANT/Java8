@@ -28,6 +28,7 @@ public class AgeVerification {
 		   for(Person person : L1) {
 			   if(p.test(person)== true) {
 				   System.out.println(person.name);
+				   
 			   }
 		   }
 	}
