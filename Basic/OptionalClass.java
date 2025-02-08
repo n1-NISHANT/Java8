@@ -23,6 +23,13 @@ public class OptionalClassDemo {
 	
 	User u = new User();
 	
-	Optional<String> username = u.getUsername(userId);	
+	Optional<String> username = u.getUsername(userId);
+	if(username.isPresent()) {
+	String name = username.get();
+	System.out.println(name.toUpperCase()+", Hello");
+	}else {
+		System.out.println("No Data Found");
+	}
+    }
 }
 
