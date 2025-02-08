@@ -28,7 +28,7 @@ public class OptionalClassDemo {
 	String name = username.get();
 	System.out.println(name.toUpperCase()+", Hello");
 	}else {
-		System.out.println("No Data Found");
+	  System.out.println("No Data Found");
 	}
     }
 }
