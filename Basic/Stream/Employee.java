@@ -22,5 +22,13 @@ public class Employee{
 		Employee emp7 = new Employee("Salendra", 40, 90000);
 
 	    Stream<Employee> emp = Stream.of(emp1,emp2,emp3,emp4,emp5,emp6,emp7);
-  
+
+	   /*  emp.filter(empl -> empl.salary>=50000)
+	    .map(empl -> empl.name +" "+ empl.age)
+	    .forEach(empl -> System.out.println(empl));
+	    */
+	    emp.filter(empl -> empl.salary>=50000)
+	    .forEach(empl -> System.out.println(empl.name + " " + empl.age));
+
+   }	     
 }
