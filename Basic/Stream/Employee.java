@@ -1,5 +1,5 @@
 package Java8.Basic.Stream;
-
+import java.util.stream.Stream;
 
 public class Employee{
   String name;
@@ -20,5 +20,7 @@ public class Employee{
 		Employee emp5 = new Employee("Ankit", 18, 58000);
 		Employee emp6 = new Employee("Ankita", 21, 60000);
 		Employee emp7 = new Employee("Salendra", 40, 90000);
+
+	    Stream<Employee> emp = Stream.of(emp1,emp2,emp3,emp4,emp5,emp6,emp7);
   
 }
