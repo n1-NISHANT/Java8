@@ -1,5 +1,9 @@
 package java8.Basic.Stream;
+
 import java.util.stream.Stream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class StreamInput{
 public static void main(String[] args) {
@@ -12,5 +16,20 @@ public static void main(String[] args) {
 	    al.add("Karan");
 	    Stream<String> stream2 = al.stream();
 	    //System.out.println(stream2);
+	List<Integer> li  = Arrays.asList(10,60,20,30,80);
+	// first way or earlier way 
+	/*	for(int a : li) {
+		  if(a>20)
+	         System.out.println(a);
+		}
+	*/
+		// first way
+	/*	Stream<Integer> str = li.stream();
+		Stream<Integer> filter =  str.filter(a -> a>20);
+		filter.forEach(i->System.out.println(i));
+	*/
+		//second way
+		li.stream().filter(a->a>20).forEach(i->System.out.print(i+"\t "));
+	
   }
 }
