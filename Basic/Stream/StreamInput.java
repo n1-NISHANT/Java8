@@ -28,8 +28,10 @@ public static void main(String[] args) {
 		Stream<Integer> filter =  str.filter(a -> a>20);
 		filter.forEach(i->System.out.println(i));
 	*/
-		//second way
-		li.stream().filter(a->a>20).forEach(i->System.out.print(i+"\t "));
+	//second way
+	li.stream().filter(a->a>20).forEach(i->System.out.print(i+"\t "));
 	
+	List<String> l = Arrays.asList("Jons","Anikate","nishant","Ajay","mohan","Akash");
+	l.stream().filter(a->a.startsWith("A")).forEach(i->System.out.println(i));
   }
 }
