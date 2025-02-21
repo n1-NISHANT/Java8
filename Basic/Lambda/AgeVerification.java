@@ -22,9 +22,7 @@ public class AgeVerification {
 		Person p5 = new Person("Viveak",33);
 		
 		List<Person> L1 =   Arrays.asList(p1,p2,p3,p4,p5);
-		
 		   Predicate<Person> p  =  person -> person.age>=18;
-		   
 		   for(Person person : L1) {
 			   if(p.test(person)== true) {
 				   System.out.println(person.name);
