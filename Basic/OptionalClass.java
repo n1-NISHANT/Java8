@@ -20,9 +20,7 @@ public class OptionalClassDemo {
 	Scanner s = new Scanner(System.in);
 	System.out.println("Enter User ID ");
 	int userId = s.nextInt();
-	
 	User u = new User();
-	
 	Optional<String> username = u.getUsername(userId);
 	if(username.isPresent()) {
 	String name = username.get();
