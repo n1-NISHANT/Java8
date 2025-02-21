@@ -6,7 +6,6 @@ class EmployeeDetails{
   String name;
 	String location;
 	int sal;
-  
     public EmployeeDetails(String name,String location,int sal) {
 		this.name = name;
 		this.location = location;
@@ -33,6 +32,5 @@ public static void main(String [] args){
 	    	System.out.println(employee.name);
 	    	}
 	    }
-  
     }
 }
